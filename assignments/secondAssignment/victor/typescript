@@ -1,0 +1,59 @@
+Script started on 2018-10-16 00:58:06-0700
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ make
+gcc -std=c99 -g -Wall -o setBits setBits.c
+gcc -std=c99 -g -Wall -o showBits showBits.c
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ ./setBits -1
+Error: entered an integer out of the acceptable range
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ ./setBits -1[K[K16
+Error: entered an integer out of the acceptable range
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ ./setBits 16[K111111111
+Error: entered an integer out of the acceptable range
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ ./setBits 1111111111[K[K[K[K[K[K[K[K[K[K[K[Ks 01 [K[K 1 2 3 4 5
+0000000000111111
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ ./setBits 0 1 2 3 4 5[K[K[K[K[K[K[K[K[K[K 15
+1000000000000001
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ ./setBits 0 15[K[K[K[K1 15
+1000000000000010
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ ./setBits 1 15[K[K[K[K[K 01 02 00
+0000000000000111
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ ./setBits 01 02 00[K[K[K[K[K[K[K[K1 2[K3 4 7[K[K[K5 7 9 11 13 15
+1010101010101010
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ ./setBits 1 3 5 7 9 11 13 15[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K3 13 8 14 15
+1110000100001000
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ ./setBits 3 13 8 14 15[K[K[K[K[K[K[K[K[K[K[K[K7 1 8 2 14 3
+0100000110001110
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ ./setBits 7 1 8 2 14 3[K[K[K[K[K[K[K[K[K[K[K[K
+No integers were entered. Pleas run again
+
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ 
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ 
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ 
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ 
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ 
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ 
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ ************  SHOWBITS **********
+makefile: command not found
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ ./showBits 
+Error: please provide two hexadecimal number as arguments to the program.
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ ./showBits 0x1
+Error: please provide two hexadecimal number as arguments to the program.
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ ./showBits 0x1 0x3
+Bits 0, in common. Hexacdecimal: 0x1, Signed: 1, Unsigned: 1
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ ./showBits 0x1 0x3[K[K[K[K[KFFFFF 0xzzz[K[K
+Error: please provide two hexadecimal number as arguments to the program.
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ ./showBits 0xFFFFF 0xz[Kasd
+Error: please provide two hexadecimal number as arguments to the program.
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ ./showBits 0xFFFFF 0xasd[K[K[K1111
+Bits 0,4,8,12, in common. Hexacdecimal: 0x1111, Signed: 4369, Unsigned: 4369
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ ./showBits 0xE0C874A3 0xD49157FF
+Bits 0,1,5,7,10,12,14,23,30,31, in common. Hexacdecimal: 0xC08054A3, Signed: -1065331549, Unsigned: 3229635747
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ 0cfffffffffff[K[K[K[K[K[K[K[K[K[K[Kffffff 0xFFFFFF[K[K[K[K[K[Kfffffff
+0cffffff: command not found
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ 0cffffff 0xfffffff./showBits 0xE0C874A3 0xD49157FF[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kxf[K[Kcfffff 0xffffff
+Error: please provide two hexadecimal number as arguments to the program.
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ ./showBits 0cfffff 0xffffff[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kxffffffffffffff 0xfffffffffffbad
+Bits 0,2,3,5,7,8,9,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31, in common. Hexacdecimal: 0xFFFFFBAD, Signed: -1107, Unsigned: 4294966189
+victor32@ada:~/Classes/cs201/assignments/secondAssignment/victor$ exit
+exit
+
+Script done on 2018-10-16 01:02:59-0700

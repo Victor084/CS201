@@ -1,0 +1,31 @@
+Script started on 2018-10-03 22:05:26-0700
+victor32@ada:~/Classes/cs201/assignments$ ./typing_word_game 
+This is a game that tests typing speed
+
+Type the following words:
+ word #1 is the:iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+Incorrect. Try again.
+ word #1 is the:t
+Incorrect. Try again.
+ word #1 is the:th
+Incorrect. Try again.
+ word #1 is the:the
+ word #2 is fox:foxxxxx
+Incorrect. Try again.
+ word #2 is fox:fox dog
+Incorrect. Try again.
+ word #2 is fox:fox
+ word #3 is The:The
+ word #4 is brown:brown
+ word #5 is lazy:lazy
+ word #6 is dog:dog
+ word #7 is over:over
+ word #8 is quick:quick
+ word #9 is jumps:jumps
+
+Correct! Your time is: 27 sec and 97874 usec
+
+victor32@ada:~/Classes/cs201/assignments$ exit
+exit
+
+Script done on 2018-10-03 22:06:14-0700
